@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED="../../Google Drive/palestras/defcon2015/baseFirmware.X/main.c"
+SOURCEFILES_QUOTED_IF_SPACED=main.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/1460209148/main.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/1460209148/main.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/_ext/1460209148/main.o
+OBJECTFILES=${OBJECTDIR}/main.o
 
 # Source Files
-SOURCEFILES=../../Google Drive/palestras/defcon2015/baseFirmware.X/main.c
+SOURCEFILES=main.c
 
 
 CFLAGS=
@@ -92,16 +92,16 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/_ext/1460209148/main.o: ../../Google\ Drive/palestras/defcon2015/baseFirmware.X/main.c  nbproject/Makefile-${CND_CONF}.mk
-	${MKDIR} "${OBJECTDIR}/_ext/1460209148" 
-	${RM} ${OBJECTDIR}/_ext/1460209148/main.o 
-	${MP_CC} --use-non-free --debug -c -mpic16 -p18f4550 "../../Google Drive/palestras/defcon2015/baseFirmware.X/main.c"  -o${OBJECTDIR}/_ext/1460209148/main.o
+${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
+	${MKDIR} "${OBJECTDIR}" 
+	${RM} ${OBJECTDIR}/main.o 
+	${MP_CC} --use-non-free --debug -c -mpic16 -p18f4550 main.c  -o${OBJECTDIR}/main.o
 	
 else
-${OBJECTDIR}/_ext/1460209148/main.o: ../../Google\ Drive/palestras/defcon2015/baseFirmware.X/main.c  nbproject/Makefile-${CND_CONF}.mk
-	${MKDIR} "${OBJECTDIR}/_ext/1460209148" 
-	${RM} ${OBJECTDIR}/_ext/1460209148/main.o 
-	${MP_CC} --use-non-free -c -mpic16 -p18f4550 "../../Google Drive/palestras/defcon2015/baseFirmware.X/main.c"  -o${OBJECTDIR}/_ext/1460209148/main.o
+${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
+	${MKDIR} "${OBJECTDIR}" 
+	${RM} ${OBJECTDIR}/main.o 
+	${MP_CC} --use-non-free -c -mpic16 -p18f4550 main.c  -o${OBJECTDIR}/main.o
 	
 endif
 
